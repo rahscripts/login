@@ -19,12 +19,14 @@ export default function Home() {
       {/* --- Navbar --- */}
       <nav className="relative sticky top-0 z-50 border-b border-gray-200/50 dark:border-gray-800/50 bg-white/60 dark:bg-[#0a0a0a]/60 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 font-bold text-lg tracking-tight">
-            <div className="bg-orange-600 text-white p-1 rounded-md">
-              <Layers size={18} />
+          <Link href="/">
+            <div className="flex items-center gap-2 font-bold text-lg tracking-tight">
+              <div className="bg-orange-600 text-white p-1 rounded-md">
+                <Layers size={18} />
+              </div>
+              <span>Login<span className="text-orange-600 ml-2 underline">UI</span> Library</span>
             </div>
-            <span>Login<span className="text-orange-600">UI</span></span>
-          </div>
+          </Link>
 
           <div className="flex items-center gap-4">
             <Link

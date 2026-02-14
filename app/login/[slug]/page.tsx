@@ -7,6 +7,8 @@ import { useState, use } from "react";
 import {
     ArrowLeft,
     Code2,
+    Github,
+    Layers,
     Eye,
     Copy,
     Check,
@@ -40,30 +42,33 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
         <div className="min-h-screen bg-gray-50 dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 font-sans selection:bg-orange-100 dark:selection:bg-orange-900/30">
 
             {/* --- Navigation Header --- */}
-            <header className="sticky top-0 z-50 bg-white/80 dark:bg-[#0a0a0a]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-                <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-                    <Link
-                        href="/"
-                        className="group flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
-                    >
-                        <div className="p-1.5 rounded-md bg-gray-100 dark:bg-gray-800 group-hover:bg-orange-50 dark:group-hover:bg-orange-900/20 transition-colors">
-                            <ArrowLeft size={16} />
+            <nav className="relative sticky top-0 z-50 border-b border-gray-200/50 dark:border-gray-800/50 bg-white/60 dark:bg-[#0a0a0a]/60 backdrop-blur-xl">
+                <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+                    <Link href="/">
+                        <div className="flex items-center gap-2 font-bold text-lg tracking-tight">
+                            <div className="bg-orange-600 text-white p-1 rounded-md">
+                                <Layers size={18} />
+                            </div>
+                            <span>Login<span className="text-orange-600 ml-2 underline">UI</span> Library</span>
                         </div>
-                        <span>Back to Home</span>
                     </Link>
 
-                    <h1 className="text-sm font-medium text-gray-900 dark:text-white">
+                    <div className="text-sm font-bold">
                         {component.title}
-                    </h1>
+                    </div>
 
-                    {/* Placeholder for symmetry or extra actions */}
-                    <div className="w-[120px] flex justify-end">
-                        <span className="text-xs text-gray-400 border border-gray-200 dark:border-gray-800 px-2 py-1 rounded-full">
-                            v1.0.0
-                        </span>
+                    <div className="flex items-center gap-4">
+                        <Link
+                            href="https://github.com/rahscripts/login"
+                            target="_blank"
+                            className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                        >
+                            <Github size={18} />
+                            <span className="hidden sm:inline">Star on GitHub</span>
+                        </Link>
                     </div>
                 </div>
-            </header>
+            </nav>
 
             <main className="max-w-6xl mx-auto p-6 md:p-8">
 
