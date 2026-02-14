@@ -29,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistMono.variable} tracking-wide scroll-smooth antialiased`}
       >
+        <div className="fixed inset-0 pointer-events-none bg-[image:radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[image:radial-gradient(#1f1f1f_1px,transparent_1px)] [background-size:20px_20px] [mask-image:radial-gradient(ellipse_at_center,black_70%,transparent_100%)]"></div>
         <div className="flex">
           <Sidebar />
           <div className="flex-1">
