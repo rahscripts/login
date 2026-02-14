@@ -70,7 +70,7 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
                 </div>
             </nav>
 
-            <main className="max-w-6xl mx-auto p-6 md:p-8">
+            <main className="max-w-6xl relative mx-auto p-6 md:p-8">
 
                 {/* --- Main Playground Card --- */}
                 <div className="flex flex-col bg-white dark:bg-[#121212] rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm overflow-hidden ring-1 ring-black/5 dark:ring-white/5">
