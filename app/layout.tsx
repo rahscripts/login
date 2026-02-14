@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./components/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
   description: "A curated collection of modern, beautiful, production-ready login and signup pages.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,9 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} scroll-smooth antialiased`}
+        className={`${geistMono.variable} tracking-wide scroll-smooth antialiased`}
       >
-        {children}
+        <div className="flex">
+          <Sidebar />
+          <div className="flex-1">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

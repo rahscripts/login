@@ -3,8 +3,8 @@ import Login2 from "@/components/login/Login2";
 
 export const components = [
   {
-    slug: "login1",
-    title: "login 1",
+    slug: "1",
+    title: "login Simple",
     code: `"use client";
 
 import { useState } from "react";
@@ -84,8 +84,8 @@ export default function LoginPage() {
     preview: Login1
   },
   {
-    slug: "cards",
-    title: "Glass Cards",
+    slug: "2",
+    title: "login glass",
     code: `"use client";
 
 import { useState } from "react";
