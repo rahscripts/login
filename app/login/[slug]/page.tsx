@@ -38,24 +38,26 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
                 </div>
             </div>
 
-            <main className="max-w-7xl mx-auto p-4 md:p-8 grid gap-5">
+            <main className="max-w-7xl mx-auto p-4 md:p-8 grid gap-20">
 
                 {/* Preview Section */}
-                <div className="flex flex-col h-full bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden shadow-sm ring-1 ring-transparent hover:ring-orange-500/20 transition-all">
-                    <div className="p-4 border-b border-gray-100 dark:border-neutral-800 flex justify-between items-center bg-gray-50 dark:bg-neutral-900/50">
-                        <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">Live Preview</span>
-                    </div>
-                    <div className="flex-1 overflow-hidden relative rounded-b-2xl bg-gray-100 dark:bg-neutral-900">
-                        <div className="w-full h-full overflow-auto">
-                            <div className="min-h-full w-full relative isolate">
-                                <Component />
+                <div className="scale-80 -mt-20">
+                    <div className="flex flex-col h-full bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden shadow-sm ring-1 ring-transparent hover:ring-orange-500/20 transition-all">
+                        <div className="p-4 border-b border-gray-100 dark:border-neutral-800 flex justify-between items-center bg-gray-50 dark:bg-neutral-900/50">
+                            <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">Live Preview</span>
+                        </div>
+                        <div className="flex-1 overflow-hidden relative rounded-b-2xl bg-gray-100 dark:bg-neutral-900">
+                            <div className="w-full h-full overflow-auto">
+                                <div className="min-h-full w-full relative isolate">
+                                    <Component />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Code Section */}
-                <div className="flex flex-col h-full bg-[#1e1e1e] rounded-2xl border border-gray-800 overflow-hidden shadow-lg">
+                <div className="flex scale-80 -mt-70 flex-col h-full bg-[#1e1e1e] rounded-2xl border border-gray-800 overflow-hidden shadow-lg">
                     <div className="flex items-center justify-between p-4 border-b border-gray-700 bg-[#252526]">
                         <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Source Code</span>
                         <button
