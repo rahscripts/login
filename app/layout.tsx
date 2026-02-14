@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Login ui",
+  title: "Login-ui Library",
   description: "A curated collection of modern, beautiful, production-ready login and signup pages.",
 };
 
