@@ -8,7 +8,7 @@ export default function Sidebar() {
     const pathname = usePathname();
 
     return (
-        <aside className="w-52 mt-10 h-screen fixed left-0 top-0 border-r border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-2 py-3 max-md:hidden">
+        <aside className="w-52 pt-10 h-screen fixed left-0 top-0 border-r border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 lowercase px-2 py-3 max-md:hidden">
             <div className="mt-14 flex flex-col gap-1">
                 {components.map((component) => {
                     const isActive = pathname === `/login/${component.slug}`;

@@ -23,23 +23,25 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-neutral-950 text-gray-900 dark:text-white font-[family-name:var(--font-geist-sans)]">
             {/* Header / Navigation */}
-            <div className="sticky top-0 z-50 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md border-b border-gray-200 dark:border-neutral-800">
+            <div className="sticky top-0 z-50 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
                 <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
                     <Link
                         href="/"
-                        className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                        className="group flex items-center gap-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
                     >
-                        &larr; Back to Collection
+                        <span className="group-hover:-translate-x-1 transition-transform">&larr;</span> Back to Home
                     </Link>
-                    <h1 className="text-lg font-semibold">{component.title}</h1>
+                    <h1 className="text-lg font-semibold text-orange-600 dark:text-orange-400">
+                        {component.title} <span className="text-neutral-400 dark:text-neutral-600 font-normal ml-2 text-sm">by mr</span>
+                    </h1>
                     <div className="w-24"></div> {/* Spacer for centering title roughly */}
                 </div>
             </div>
 
-            <main className="max-w-7xl mx-auto p-4 md:p-8 grid lg:grid-cols-2 gap-8 h-[calc(100vh-64px)]">
+            <main className="max-w-7xl mx-auto p-4 md:p-8 grid gap-5">
 
                 {/* Preview Section */}
-                <div className="flex flex-col h-full bg-white dark:bg-neutral-900 rounded-2xl border border-gray-200 dark:border-neutral-800 overflow-hidden shadow-sm">
+                <div className="flex flex-col h-full bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden shadow-sm ring-1 ring-transparent hover:ring-orange-500/20 transition-all">
                     <div className="p-4 border-b border-gray-100 dark:border-neutral-800 flex justify-between items-center bg-gray-50 dark:bg-neutral-900/50">
                         <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">Live Preview</span>
                     </div>
