@@ -39,7 +39,7 @@ export default function Page({ params }: { params: Promise<{ slug: string }> }) 
     };
 
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 font-sans selection:bg-orange-100 dark:selection:bg-orange-900/30">
+        <div className="min-h-screen  bg-gray-50 dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 font-sans selection:bg-orange-100 dark:selection:bg-orange-900/30">
 
             {/* --- Navigation Header --- */}
             <nav className="relative sticky top-0 z-50 border-b border-gray-200/50 dark:border-gray-800/50 bg-white/60 dark:bg-[#0a0a0a]/60 backdrop-blur-xl">

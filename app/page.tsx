@@ -13,7 +13,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 ml-52 max-md:hidden dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 font-sans selection:bg-orange-100 dark:selection:bg-orange-900/30">
+    <div className="min-h-screen bg-gray-50 max-md:hidden dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 font-sans selection:bg-orange-100 dark:selection:bg-orange-900/30">
 
 
       {/* --- Navbar --- */}
